@@ -293,6 +293,9 @@ tr:last-child{
 .mobil{
     display: none;
 }
+.mobileText{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
     .content{
@@ -374,5 +377,12 @@ tr:last-child{
 
     .logo {
       height: 120px;
+    }
+
+    .mobileText{
+        display: block;
+    }
+    .computerText{
+        display: none;
     }
 }

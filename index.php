@@ -56,7 +56,12 @@ $indlaeg = getIndlaeg();
                 <?php $beskrivelse = mb_substr($rowIndlaeg['tekst'], 0, 500, 'UTF-8');
                 $tal = mb_strrpos($beskrivelse, ' ', 0, 'UTF-8');
                 $beskrivelse = mb_substr($rowIndlaeg['tekst'], 0, $tal, 'UTF-8'); ?>
-                <p class="m-tb-10 m-lr-20"><?php echo $beskrivelse . '...' ?> </p>
+                <p class="m-tb-10 m-lr-20 computerText"><?php echo $beskrivelse . '...' ?> </p>
+                <?php $beskrivelse2 = mb_substr($rowIndlaeg['tekst'], 0, 200, 'UTF-8');
+                $tal2 = mb_strrpos($beskrivelse2, ' ', 0, 'UTF-8');
+                $beskrivelse2 = mb_substr($rowIndlaeg['tekst'], 0, $tal2, 'UTF-8'); ?>
+                <p class="m-tb-10 m-lr-20 mobileText"><?php echo $beskrivelse2 . '...' ?> </p>
+
                 <a class="f-white flex-column right" href="readmore.php?id=<?php echo $rowIndlaeg['id']; ?>">
                     <h3 class="knap">
                         Læs mere
