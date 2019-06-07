@@ -33,8 +33,8 @@
                     echo $soeg;
                     ?>"
                 <?php } ?></h4>
-                <h4 class="bold filteret computer"><i class="fas fa-filter"></i></h4>
-                <h4 class="bold filteretMobil mobil"><i class="fas fa-filter"></i></h4>
+                <h4 class="bold filteret computer"><a class="filter">Kategori</a></h4>
+                <h4 class="bold filteretMobil mobil"><a class="filter">Kategori</a></h4>
             </div>
         </div>
     </div>

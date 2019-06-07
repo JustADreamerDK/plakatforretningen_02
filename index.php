@@ -30,6 +30,7 @@ $indlaeg = getIndlaeg();
     <section class="content">
         <?php while ($rowIndlaeg = mysqli_fetch_assoc($indlaeg)) {
             ?>
+            <a href="readmore.php?id=<?php echo $rowIndlaeg['id']; ?>">
             <div class="card m-tb-20">
                 <div class="b-brown p-10">
                     <h2 class="f-white bold m-lr-10"><?php echo $rowIndlaeg['overskrift']; ?></h2>
@@ -68,6 +69,7 @@ $indlaeg = getIndlaeg();
                     </h3>
                 </a>
             </div>
+            </a>
             <?php
         }
         ?>

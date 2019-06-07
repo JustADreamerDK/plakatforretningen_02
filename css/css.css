@@ -18,7 +18,8 @@ h6{
     font-size: 8px;
 }
 p{
-    font-size: 20px;
+    font-size: 23px;
+    line-height: 1.25;
 }
 
 /*Font weight/deco/style*/
@@ -120,7 +121,7 @@ a{
     padding-bottom: 10px;
 }
 .p-b-25{
-    padding: 0px 0px 25px 0px;
+    padding: 20px 0px 40px 0px;
 }
 
 /*Buttons & Inputs*/
@@ -171,7 +172,7 @@ input[type=search]{
 }
 .header-knap{
   padding: 5px 35px 5px 35px;
-  margin-left: 10px;
+  margin-left: 160px;
   font-size:24px;
   background-color: #666462;
   border: none;
@@ -192,6 +193,7 @@ input[type=search]{
       background-color: rgba(0, 0, 0, 0);
       border: 0px;
       outline: none;
+      margin-right: 160px;
 }
 .soeg:hover {
   color: #EDEEEB;
@@ -384,5 +386,13 @@ tr:last-child{
     }
     .computerText{
         display: none;
+    }
+
+    .header-knap {
+      margin-left: 10px;
+    }
+
+    .soeg {
+      margin-right: 0px;
     }
 }
