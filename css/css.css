@@ -203,6 +203,7 @@ input[type=search]{
     width: 100%;
     border-right: 1px solid #464543;
     border-bottom: 1px solid #464543;
+    cursor: pointer;
 }
 .filter:last-child{
     border-right: 0px;
