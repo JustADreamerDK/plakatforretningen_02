@@ -22,9 +22,9 @@
                         $kategori_id = $kat;
                         $kategori = getKategori($kategori_id);
                         $rowKategori = mysqli_fetch_assoc($kategori);
-                        echo $rowKategori['kategori'];
+                        echo 'Indlæg fra kategorien "' . $rowKategori['kategori'] . '"';
                     }else{
-                        echo 'Alle';
+                        echo 'Alle kategorier';
                     } ?>
                 </h4>
                 <h4 class="bold"><?php if($soeg <> ''){ ?>
