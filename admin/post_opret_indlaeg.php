@@ -7,7 +7,13 @@ $overskrift = $_POST['overskrift'];
 $dato = $_POST['dato'];
 $kategori_id = $_POST['kategori'];
 $tekst = $_POST['text'];
-createIndlaeg($overskrift, $dato, $kategori_id, $tekst);
+$tekstLinje = str_replace("
+","<br>",$tekst);
+$tekstGaas = str_replace('"',"&#34;",$tekstLinje);
+$tekstAbsostrof = str_replace("'","&#39;",$tekstGaas);
+$overskriftGaas = str_replace('"',"&#34;",$overskrift);
+$overskriftAbsostrof = str_replace("'","&#39;",$overskriftGaas);
+createIndlaeg($overskriftAbsostrof, $dato, $kategori_id, $tekstAbsostrof);
 $lastDay = getLastDay();
 $rowLast = mysqli_fetch_assoc($lastDay);
 $indlaeg_id = $rowLast['id'];
