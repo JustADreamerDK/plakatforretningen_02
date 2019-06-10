@@ -121,7 +121,7 @@ a{
     padding-bottom: 10px;
 }
 .p-b-25{
-    padding: 20px 0px 40px 0px;
+    padding: 0px 0px 25px 0px;
 }
 
 /*Buttons & Inputs*/
@@ -193,7 +193,7 @@ input[type=search]{
       background-color: rgba(0, 0, 0, 0);
       border: 0px;
       outline: none;
-      margin-right: 160px;
+      margin-right: 13.5%;
 }
 .soeg:hover {
   color: #EDEEEB;
