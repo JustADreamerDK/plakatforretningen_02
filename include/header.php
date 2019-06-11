@@ -1,5 +1,5 @@
-<header class="flex-column center">
-    <div class="flex between center w-100 b-grey">
+<header class="flex-column center w-100 b-grey">
+    <div class="flex between center content">
         <div class="flex-column middle">
             <button class="header-knap"><a target="_blank" class="f-white" href="https://www.plakatforretningen.dk/">Shop</a></button>
         </div>
@@ -9,7 +9,7 @@
         </a>
 
         <button id="soeg" href="" class="soeg bold">
-            &#9906;
+            <i class="fas fa-search"></i>
         </button>
     </div>
 
@@ -33,8 +33,8 @@
                     echo $soeg;
                     ?>"
                 <?php } ?></h4>
-                <h4 class="bold filteret computer"><a class="filter">Kategori</a></h4>
-                <h4 class="bold filteretMobil mobil"><a class="filter">Kategori</a></h4>
+                <h4 class="bold filteret computer"><a class="filter">Vælg kategori</a></h4>
+                <h4 class="bold filteretMobil mobil"><a class="filter">Vælg kategori</a></h4>
             </div>
         </div>
     </div>

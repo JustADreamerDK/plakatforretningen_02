@@ -172,7 +172,6 @@ input[type=search]{
 }
 .header-knap{
   padding: 5px 35px 5px 35px;
-  margin-left: 160px;
   font-size:24px;
   background-color: #666462;
   border: none;
@@ -182,18 +181,15 @@ input[type=search]{
   cursor: pointer;
 }
 .soeg{
-      -webkit-transform: rotate(-45deg);
+      /* -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      font-size:50px;
-      padding: 0px 45px;
-      margin-right: 10px;
+      transform: rotate(-45deg); */
+      font-size: 35px;
       color:#E2E3DE;
       background-color: rgba(0, 0, 0, 0);
       border: 0px;
       outline: none;
-      margin-right: 13.5%;
 }
 .soeg:hover {
   color: #EDEEEB;
@@ -265,6 +261,7 @@ header{
 .logo{
     height: 75px;
     padding: 10px;
+    margin-right: 75px;
 }
 .w-100{
     width: 100%;
