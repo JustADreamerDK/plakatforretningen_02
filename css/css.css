@@ -181,10 +181,6 @@ input[type=search]{
   cursor: pointer;
 }
 .soeg{
-      /* -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg); */
       font-size: 35px;
       color:#E2E3DE;
       background-color: rgba(0, 0, 0, 0);
@@ -391,6 +387,6 @@ tr:last-child{
     }
 
     .soeg {
-      margin-right: 0px;
+      font-size: 50px;
     }
 }
