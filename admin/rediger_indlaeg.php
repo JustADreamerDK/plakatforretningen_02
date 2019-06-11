@@ -36,7 +36,12 @@ $rowKategorien = mysqli_fetch_assoc($katogorien);
                         <option value="<?php echo $rowKategori['id'] ?>"><?php echo $rowKategori['kategori']; ?></option>
                     <?php } ?>
                 </select>
-                <textarea rows="8" class="p-10" name="text"><?php echo $rowIndlaeg['tekst']; ?></textarea>
+                <textarea rows="8" class="p-10" name="text"><?php
+                $tekst = $rowIndlaeg['tekst'];
+                $tekstLinje = str_replace("<br>","
+",$tekst);
+                echo $tekstLinje;
+                 ?></textarea>
                 <div class="flex-column right m-tb-10">
                     <input class="f-white bold" type="submit" value="Opdater"></input>
                 </div>

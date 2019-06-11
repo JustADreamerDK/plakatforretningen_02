@@ -7,7 +7,13 @@ $overskrift = $_POST['overskrift'];
 $dato = $_POST['dato'];
 $kategori = $_POST['kategori'];
 $tekst = $_POST['text'];
-updateIndlaeg($id, $overskrift, $dato, $kategori, $tekst);
+$tekstLinje = str_replace("
+","<br>",$tekst);
+$tekstGaas = str_replace('"',"&#34;",$tekstLinje);
+$tekstAbsostrof = str_replace("'","&#39;",$tekstGaas);
+$overskriftGaas = str_replace('"',"&#34;",$overskrift);
+$overskriftAbsostrof = str_replace("'","&#39;",$overskriftGaas);
+updateIndlaeg($id, $overskriftAbsostrof, $dato, $kategori, $tekstAbsostrof);
 ?>
 <!DOCTYPE html>
 <html lang="da">
